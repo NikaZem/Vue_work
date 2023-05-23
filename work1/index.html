@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p>кнопка была нажата {{counter}} раз</p>
+        <button @click="counter++">add</button>
+
+        <div>
+            <button @click="say('hello')">Say Hello</button>
+            <button @click="say('what had happened?')">Say What</button>
+        </div>
+
+        <ul>
+            <li v-for="(pers, index) in person"><em>{{index}}_</em>{{pers.message}}_{{pers.id}}></li>
+        </ul>
+
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
