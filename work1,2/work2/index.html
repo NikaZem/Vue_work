@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p :style="getCss">Hello, 1T Sprint!</p>
+        <input type="text" id="nick" v-model="checkedName" value="Ник">
+        <label for="nick">Ник</label>
+        <input type="text" id="veronika" v-model="checkedName" value="Вероника">
+        <label for="veronika">Вероника</label>
+        <input type="text" id="alice" v-model="checkedName" value="Алиса">
+        <label for="alice">Алиса</label>
+        <input type="text" id="denis" v-model="checkedName" value="Денис">
+        <label for="denis">Денис</label><br>
+
+        <select name="" id="" v-model="selected">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select><br>
+        <span>Выбрано: {{selected}}</span>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
